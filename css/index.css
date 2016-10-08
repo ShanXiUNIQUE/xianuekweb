@@ -4,6 +4,7 @@
   min-width: 1000px;
   height: 140px;
   position: absolute;
+  z-index: 99999;
 }
 .header .header-top-box {
   height: 80px;
