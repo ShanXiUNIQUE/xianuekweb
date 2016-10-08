@@ -1,7 +1,7 @@
 $(function(){
     var mySwiper = new Swiper('.hnz-swiper-container',{
         // pagination: '.pagination',
-        // loop:true,
+        loop:true,
         // grabCursor: true,
         // paginationClickable: true
     })

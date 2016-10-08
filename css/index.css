@@ -126,6 +126,103 @@
 .banner-box {
   width: 100%;
   height: 560px;
+  overflow: hidden;
   padding-top: 80px;
+  position: relative;
+}
+.banner-box .hnz-swiper-container {
+  height: 560px;
+}
+.banner-box .swiper-slide a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+.banner-box .btn-controller {
+  position: absolute;
+  width: 90%;
+  left: 5%;
+  height: 0px;
+  top: 50%;
+  margin-top: 55px;
+}
+.banner-box .btn-controller a {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 22px;
+  color: #fff;
+  background: #d2d2d2;
+  border: 1px solid #b6b6b6;
+  border-radius: 50%;
+  transition: all .3s;
+}
+.banner-box .btn-controller a:hover {
+  background: #0369db;
+}
+.banner-box .btn-controller .hnz-arrow-left {
+  float: left;
+}
+.banner-box .btn-controller .hnz-arrow-right {
+  float: right;
 }
 /*banner 结束*/
+/*选择优逸客开始*/
+.select-box {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 150px;
+}
+.select-box div {
+  width: 20%;
+  height: 100%;
+  float: left;
+  transition: all .3s;
+  -webkit-transition: all .3s;
+}
+.select-box div.select-1 {
+  background: url(../images/s_1.png) no-repeat bottom right;
+  background-size: 100% 100%;
+}
+.select-box div.select-2 {
+  background: url(../images/s_2.png) no-repeat bottom right;
+  background-size: 100% 100%;
+}
+.select-box div.select-3 {
+  background: url(../images/s_3.png) no-repeat bottom right;
+  background-size: 100% 100%;
+}
+.select-box div.select-4 {
+  background: url(../images/s_4.png) no-repeat bottom right;
+  background-size: 100% 100%;
+}
+.select-box div.select-5 {
+  background: url(../images/s_5.png) no-repeat bottom right;
+  background-size: 100% 100%;
+}
+.select-box div:hover {
+  background-size: 120% 120%;
+}
+.select-box div:hover .select-text1 {
+  color: #0c80ec;
+}
+.select-box div span {
+  padding-left: 20px;
+  display: block;
+  color: #333;
+  height: 26px;
+  line-height: 26px;
+}
+.select-box div .select-text1 {
+  margin-top: 49px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.select-box div .select-text2 {
+  font-size: 14px;
+}
+/*选择优逸客结束*/
