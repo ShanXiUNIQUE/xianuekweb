@@ -107,6 +107,16 @@
   opacity: 0;
 }
 /*头部结束*/
+/* lx */
+.lx_more {
+  width: 136px;
+  height: 28px;
+  float: right;
+}
+.lx_more img {
+  width: 100%;
+  height: 100%;
+}
 .lx_gain {
   width: 1000px;
   height: auto;
@@ -135,4 +145,38 @@
   height: 2px;
   background: #0c80ec;
   margin: 0 auto;
+}
+.lx_gain .lx_gainMenu {
+  width: 100%;
+  height: 45px;
+  padding: 30px 0 20px;
+  border-bottom: 1px solid #c9c9c9;
+  line-height: 45px;
+}
+.lx_gain .lx_gainMenu li {
+  float: left;
+  margin-right: 40px;
+  color: #404040;
+  font-size: 14px;
+  cursor: pointer;
+}
+.lx_gain .lx_gainMenu .lx_menuHot {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #0c80ec;
+  color: #0c80ec;
+  font-weight: bolder;
+}
+.lx_gain .lx_gainMenu .lx_gainOrder {
+  font-family: 'Microsoft YaHei';
+  font-size: 12px;
+  color: #888;
+  float: left;
+  margin-left: -20px;
+}
+.lx_gain .lx_tabBox {
+  width: 1080px;
+  height: 290px;
+  padding-top: 40px;
+  margin-left: -40px;
+  background: red;
 }
