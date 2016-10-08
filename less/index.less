@@ -1,0 +1,119 @@
+@iw:1000px;
+@bc:#0c80ec;
+.dc(){
+    margin-left:auto;
+    margin-right: auto;
+}
+
+/*头部开始*/
+
+.header{
+    height: 140px;
+    .header-top-box{
+        height: 80px;
+        background: #292c33;
+        .header-top{
+            width: @iw;
+            height: 100%;
+            .dc;
+            .logo{
+                width: 178px;
+                height: 140px;
+                display: block;
+                overflow: hidden;
+                float: left;
+            }
+            .logo-text{
+                float: left;
+                height: 100%;
+                color:#f0f0f0;
+                padding-left:20px;
+                h2{
+                    padding-top: 20px;
+                    font-size: 22px;
+                    line-height: 26px;
+                    text-shadow: 1px 1px 2px #222;
+                }
+                h4{
+                    font-size: 14px;
+                    line-height:18px;
+                    text-shadow: 1px 1px 2px #222;
+                }
+            }
+            .header-top-right{
+                float: right;
+                a{
+                    float: left;
+                    width: 36px;
+                    height: 36px;
+                    border:1px solid #fff;
+                    border-radius: 50%;
+                    margin:24px  10px 0 0;
+
+                }
+                .header-top-tell{
+                    float: left;
+                    width: 138px;
+                    height: 44px;
+                    margin:18px 0;
+                }
+            }
+        }
+    }
+    .header-nav-box{
+        height: 60px;
+        background-color: rgba(255,255,255,255,0.6);
+        // background: red;
+        .header-nav{
+            width: @iw;
+            height: 100%;
+            .dc;
+
+            .header-nav-list{
+                width:1000px-178px;
+                margin-left: 178px;
+                text-align: justify;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    width: 100%;
+                    height: 0;
+                    line-height: 0;
+                }
+                li{
+                    display: inline-block;
+                    text-align: center;
+                    height: 60px;
+                    min-width: 84px;
+                    a{
+                        display: block;
+                        height: 100%;
+                        &:hover .zh{
+                            font-size: 18px;
+                            color:@bc;
+                        }
+                        &:hover .en{
+                            opacity: 1;
+                        }
+                    }
+                    span{
+                        display: block;
+                        transition: font-size  .2s,opacity .3s;
+                    }
+                    .zh{
+                        font-size: 16px;
+                        margin-top: 22px;
+                        line-height: 18px;
+                    }
+                    .en{
+                        font-size: 12px;
+                        color: @bc;
+                        opacity: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*头部结束*/

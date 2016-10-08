@@ -1,0 +1,109 @@
+/*头部开始*/
+.header {
+  height: 140px;
+}
+.header .header-top-box {
+  height: 80px;
+  background: #292c33;
+}
+.header .header-top-box .header-top {
+  width: 1000px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .header-top-box .header-top .logo {
+  width: 178px;
+  height: 140px;
+  display: block;
+  overflow: hidden;
+  float: left;
+}
+.header .header-top-box .header-top .logo-text {
+  float: left;
+  height: 100%;
+  color: #f0f0f0;
+  padding-left: 20px;
+}
+.header .header-top-box .header-top .logo-text h2 {
+  padding-top: 20px;
+  font-size: 22px;
+  line-height: 26px;
+  text-shadow: 1px 1px 2px #222;
+}
+.header .header-top-box .header-top .logo-text h4 {
+  font-size: 14px;
+  line-height: 18px;
+  text-shadow: 1px 1px 2px #222;
+}
+.header .header-top-box .header-top .header-top-right {
+  float: right;
+}
+.header .header-top-box .header-top .header-top-right a {
+  float: left;
+  width: 36px;
+  height: 36px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin: 24px  10px 0 0;
+}
+.header .header-top-box .header-top .header-top-right .header-top-tell {
+  float: left;
+  width: 138px;
+  height: 44px;
+  margin: 18px 0;
+}
+.header .header-nav-box {
+  height: 60px;
+  background-color: #ffffff;
+}
+.header .header-nav-box .header-nav {
+  width: 1000px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.header .header-nav-box .header-nav .header-nav-list {
+  width: 822px;
+  margin-left: 178px;
+  text-align: justify;
+}
+.header .header-nav-box .header-nav .header-nav-list::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  line-height: 0;
+}
+.header .header-nav-box .header-nav .header-nav-list li {
+  display: inline-block;
+  text-align: center;
+  height: 60px;
+  min-width: 84px;
+}
+.header .header-nav-box .header-nav .header-nav-list li a {
+  display: block;
+  height: 100%;
+}
+.header .header-nav-box .header-nav .header-nav-list li a:hover .zh {
+  font-size: 18px;
+  color: #0c80ec;
+}
+.header .header-nav-box .header-nav .header-nav-list li a:hover .en {
+  opacity: 1;
+}
+.header .header-nav-box .header-nav .header-nav-list li span {
+  display: block;
+  transition: font-size 0.2s, opacity 0.3s;
+}
+.header .header-nav-box .header-nav .header-nav-list li .zh {
+  font-size: 16px;
+  margin-top: 22px;
+  line-height: 18px;
+}
+.header .header-nav-box .header-nav .header-nav-list li .en {
+  font-size: 12px;
+  color: #0c80ec;
+  opacity: 0;
+}
+/*头部结束*/
