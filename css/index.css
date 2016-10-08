@@ -226,3 +226,190 @@
   font-size: 14px;
 }
 /*选择优逸客结束*/
+/*课程列表开始*/
+.course-box {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.course-box .course-title {
+  height: 196px;
+  text-align: center;
+  overflow: hidden;
+}
+.course-box .course-title p {
+  margin-top: 60px;
+  font-size: 36px;
+  color: #0c80ec;
+}
+.course-box .course-title span {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+.course-box .course-title i {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #043280;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.course-box .course-list {
+  width: 100%;
+  height: 484px;
+}
+.course-box .course-list .course {
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 10px 10px 0 0;
+  width: 33.33333%;
+  float: left;
+  height: 100%;
+  background: #fff;
+  overflow: hidden;
+}
+.course-box .course-list .course.hot,
+.course-box .course-list .course:hover {
+  transition: all .2s;
+  transform: scale(1.05, 1.05);
+  box-shadow: 0 2px 3px #999;
+  border: 1px solid transparent;
+}
+.course-box .course-list .course.hot *,
+.course-box .course-list .course:hover * {
+  transition: all .2s;
+}
+.course-box .course-list .course.hot .course-top,
+.course-box .course-list .course:hover .course-top {
+  background: url(../images/course_bg.png) no-repeat -10px -5px;
+}
+.course-box .course-list .course.hot .course-top .course-top-title h3,
+.course-box .course-list .course:hover .course-top .course-top-title h3,
+.course-box .course-list .course.hot .course-top .course-top-title p,
+.course-box .course-list .course:hover .course-top .course-top-title p {
+  color: #fff;
+}
+.course-box .course-list .course.hot .course-top .course-top-list *,
+.course-box .course-list .course:hover .course-top .course-top-list * {
+  transition: all .4s;
+}
+.course-box .course-list .course.hot .course-top .course-top-list h3,
+.course-box .course-list .course:hover .course-top .course-top-list h3 {
+  color: #fff;
+}
+.course-box .course-list .course.hot .course-top .course-top-list span,
+.course-box .course-list .course:hover .course-top .course-top-list span {
+  color: #fff;
+  border-color: #fff;
+}
+.course-box .course-list .course.hot .course-button,
+.course-box .course-list .course:hover .course-button {
+  background-color: #fe6e20;
+  color: #fff!important;
+}
+.course-box .course-list .course .course-top {
+  height: 244px;
+  background-color: #e7e7e7;
+}
+.course-box .course-list .course .course-top .course-top-title {
+  width: 262px;
+  margin: 0 auto;
+  padding: 0 16px;
+  text-align: center;
+  overflow: hidden;
+  border-bottom: 1px dashed #f7f7f7;
+}
+.course-box .course-list .course .course-top .course-top-title h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 2;
+}
+.course-box .course-list .course .course-top .course-top-title p {
+  line-height: 1.5;
+  text-align: left;
+  font-size: 12px;
+  color: #555555;
+  margin-bottom: 10px;
+}
+.course-box .course-list .course .course-top .course-top-list {
+  width: 294px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.course-box .course-list .course .course-top .course-top-list h3 {
+  font-size: 14px;
+  color: #333;
+  line-height: 3;
+  text-align: center;
+}
+.course-box .course-list .course .course-top .course-top-list span {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 10px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #555;
+  border-radius: 13px;
+  font-size: 12px;
+}
+.course-box .course-list .course .course-bottom h3 {
+  color: #333;
+  text-align: center;
+  line-height: 44px;
+  font-size: 14px;
+}
+.course-box .course-list .course .course-bottom .course-bottom-list {
+  margin-left: 90px;
+  margin-right: 40px;
+}
+.course-box .course-list .course .course-bottom .course-bottom-list li {
+  font-size: 12px;
+  height: 28px;
+  line-height: 28px;
+  position: relative;
+}
+.course-box .course-list .course .course-bottom .course-bottom-list li span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #bbbbbb;
+  margin-right: 16px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+}
+.course-box .course-list .course .course-bottom .course-bottom-list li:nth-child(1) span {
+  width: 3px;
+  height: 3px;
+  margin-left: 1px;
+}
+.course-box .course-list .course .course-bottom .course-bottom-list li:nth-child(2) span {
+  width: 3px;
+  height: 3px;
+  margin-left: 1px;
+}
+.course-box .course-list .course .course-bottom .course-bottom-list li i {
+  position: absolute;
+  width: 1px;
+  z-index: 0;
+  height: 28px;
+  background: #ddd;
+  top: 16px;
+  left: 2px;
+}
+.course-box .course-list .course .course-bottom .course-button {
+  width: 94px;
+  height: 34px;
+  display: block;
+  border: 1px solid #fe6e20;
+  color: #fe6e20;
+  text-align: center;
+  line-height: 34px;
+  border-radius: 17px;
+  margin: 5px auto 0;
+  transition: all .3s;
+}
+/*课程列表结束*/

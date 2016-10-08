@@ -2,11 +2,14 @@
 	font-family:"Helvetica","Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
 }
 
-body,ul,li,ol,dl,dt,dd,input,form,h1,h2,h3,h4,h5,h6{
+body,ul,li,ol,dl,dt,dd,input,form,h1,h2,h3,h4,h5,h6,p{
 	margin: 0;
 	padding: 0;
 	list-style: none;
 	font-weight: normal;
+}
+body{
+	background-color: #f7f7f7;
 }
 
 img{border:0;}

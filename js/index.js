@@ -13,4 +13,13 @@ $(function(){
         e.preventDefault()
         mySwiper.swipeNext()
     })
+
+    var $courseList = $('.course-list .course');
+    $courseList.hover(function(){
+        $courseList.removeClass('hot');
+        $(this).addClsss('hot');
+    },function(){
+        $(this).removeClass('hot');
+        $courseList.eq(1).addClass('hot');
+    })
 })
