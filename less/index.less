@@ -134,6 +134,500 @@
 .banner-box{
     width: 100%;
     height: 560px;
+    overflow: hidden;
     padding-top: 80px;
+    position: relative;
+    .hnz-swiper-container{
+        height: 560px;
+    }
+    .swiper-slide a{
+        width: 100%;
+        height: 100%;
+        display: block;
+        overflow: hidden;
+    }
+    .btn-controller{
+        position: absolute;
+        width: 90%;
+        left:5%;
+        height: 0px;
+        top:50%;
+        margin-top: 55px;
+        a{
+            display: block;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            font-size: 22px;
+            color:#fff;
+            background: #d2d2d2;
+            border:1px solid #b6b6b6;
+            border-radius: 50%;
+            transition: all .3s;
+            &:hover{
+                background: #0369db;
+            }
+        }
+        .hnz-arrow-left{
+            float: left;
+        }
+        .hnz-arrow-right{
+            float: right;
+        }
+    }
 }
 /*banner 结束*/
+/*选择优逸客开始*/
+.select-box{
+    width: @iw;
+    .dc;
+    height: 150px;
+    div{
+        width: 20%;
+        height: 100%;
+        float: left;
+        transition: all .3s;
+        -webkit-transition:all .3s;
+
+        &.select-1{
+            background: url(../images/s_1.png) no-repeat bottom right;
+            background-size: 100% 100%;
+        }
+        &.select-2{
+            background: url(../images/s_2.png) no-repeat bottom right;
+            background-size: 100% 100%;
+        }
+        &.select-3{
+            background: url(../images/s_3.png) no-repeat bottom right;
+            background-size: 100% 100%;
+        }
+        &.select-4{
+            background: url(../images/s_4.png) no-repeat bottom right;
+            background-size: 100% 100%;
+        }
+        &.select-5{
+            background: url(../images/s_5.png) no-repeat bottom right;
+            background-size: 100% 100%;
+        }
+        &:hover{
+            background-size: 120% 120%;
+        }
+        &:hover .select-text1{
+            color:@bc;
+        }
+        span{
+            padding-left:20px;
+            display: block;
+            color:#333;
+            height: 26px;
+            line-height: 26px;
+        }
+        .select-text1{
+            margin-top: 49px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+        .select-text2{
+            font-size: 14px;
+        }
+    }
+}
+/*选择优逸客结束*/
+/*课程列表开始*/
+.course-box{
+    width: @iw;
+    .dc;
+    margin-bottom: 60px;
+    .course-title{
+        height: 196px;
+        text-align: center;
+        overflow: hidden;
+        p{
+            margin-top: 60px;
+            font-size: 36px;
+            color: @bc;
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            color:#333;
+        }
+        i{
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #043280;
+            .dc;
+            margin-top: 10px;
+        }
+    }
+    .course-list{
+        width: 100%;
+        height: 484px;
+        .course{
+            box-sizing: border-box;
+            border:1px solid #ddd;
+            border-radius: 10px 10px 0 0;
+            width: 33.33333%;
+            float: left;
+            height: 100%;
+            background: #fff;
+            overflow: hidden;
+            &.hot,&:hover{
+                transition: all .2s;
+                transform:  scale(1.05,1.05);
+                box-shadow: 0 2px 3px #999;
+                border: 1px solid transparent;
+                & *{
+                    transition: all .2s;
+                }
+                .course-top{
+                    background:url(../images/course_bg.png) no-repeat -10px -5px;
+                    .course-top-title h3,.course-top-title p{
+                        color:#fff;
+                    }
+                    .course-top-list{
+                        & *{
+                            transition: all .4s;
+                        }
+                        h3{
+                            color: #fff;
+                        }
+                        span{
+                            color:#fff;
+                            border-color: #fff;
+                        }
+                    }
+                }
+
+                .course-button{
+                    background-color: #fe6e20;
+                    color:#fff!important;
+                }
+            }
+            .course-top{
+                height: 244px;
+                background-color: #e7e7e7;
+                .course-top-title{
+                    width: 294px-16*2;
+                    margin:0 auto;
+                    padding:0 16px;
+                    text-align: center;
+                    overflow: hidden;
+                    border-bottom:1px dashed #f7f7f7;
+                    h3{
+                        margin-top: 10px;
+                        font-size: 24px;
+                        line-height: 2;
+                    }
+                    p{
+                        line-height: 1.5;
+                        text-align: left;
+                        font-size: 12px;
+                        color: #555555;
+                        margin-bottom: 10px;
+                    }
+                }
+                .course-top-list{
+                    width: 294px;
+                    .dc;
+                    text-align: center;
+                    h3{
+                        font-size: 14px;
+                        color:#333;
+                        line-height: 3;
+                        text-align: center;
+                    }
+                    span{
+                        height: 26px;
+                        line-height: 26px;
+                        padding:0 10px;
+                        margin:5px;
+                        display: inline-block;
+                        border:1px solid #555;
+                        border-radius:13px;
+                        font-size: 12px;
+                    }
+
+                }
+            }
+            .course-bottom{
+                h3{
+                    color: #333;
+                    text-align: center;
+                    line-height: 44px;
+                    font-size: 14px;
+                }
+                .course-bottom-list{
+                    margin-left: 90px;
+                    margin-right: 40px;
+                    li{
+                        font-size: 12px;
+                        height: 28px;
+                        line-height: 28px;
+                        position: relative;
+                        span{
+                            display: inline-block;;
+                            width: 5px;
+                            height: 5px;
+                            background: #bbbbbb;
+                            margin-right: 16px;
+                            border-radius: 50%;
+                            position: relative;
+                            z-index: 1;
+                        }
+                        &:nth-child(1) span{
+                            width: 3px;
+                            height: 3px;
+                            margin-left: 1px;
+                        }
+                        &:nth-child(2) span{
+                            width: 3px;
+                            height: 3px;
+                            margin-left: 1px;
+                        }
+                        i{
+                            position: absolute;
+                            width: 1px;
+                            z-index: 0;
+                            height: 28px;
+                            background: #ddd;
+                            top:16px;
+                            left:2px;
+                        }
+                    }
+                }
+                .course-button{
+                    width: 94px;
+                    height: 34px;
+                    display: block;
+                    border:1px solid #fe6e20;
+                    color:#fe6e20;
+                    text-align: center;
+                    line-height: 34px;
+                    border-radius: 17px;
+                    margin:5px auto 0;
+                    transition: all .3s;
+                }
+            }
+        }
+    }
+}
+/*课程列表结束*/
+/*实训讲师开始*/
+/* SHOWMORE开始 */
+.more{
+    width: 136px;
+    height: 28px;
+    float: right;
+    .more-left{
+        float: left;
+        width: 107px;
+        border: 1px solid #cccccc;
+        border-right: 0;
+        height: 26px;
+        font-size: 14px;
+        text-align: center;
+        line-height: 28px;
+        color:#888;
+    }
+    .more-right{
+        width: 28px;
+        height: 28px;
+        background-color: #fe6e20;
+        text-align: center;
+        line-height: 24px;
+        font-size: 28px;
+        color:#fff;
+        float: right;
+    }
+}
+
+/* SHOWMORE结束 */
+
+.team-box{
+    width: @iw;
+    height: auto;
+    overflow: hidden;
+    .dc;
+    .team-title{
+        padding-top: 42px;
+        height: 58px;
+        .line{
+            display: block;
+            height: 24px;
+            width: 3px;
+            float: left;
+            background-color: @bc;
+        }
+        h3{
+            float: left;
+            font-size: 24px;
+            font-weight: bold;
+            line-height: 24px;
+            margin-left: 12px;
+            margin-right: 20px;
+        }
+        h6{
+            font-size: 18px;
+            line-height: 24px;
+            float: left;
+        }
+    }
+    .hnz-pagination{
+        float: right;
+        height: 6px;
+        span{
+            width: 20px;
+            height: 6px;
+            background-color: #c6c6c6;
+            float: left;
+            margin-left:14px;
+            transition: all .2s;
+            &.swiper-visible-switch{
+                background: #579eff;
+            }
+            &.swiper-active-switch{
+                background-color: #0369db;
+            }
+        }
+
+    }
+    .team-list{
+        // width: 100%;
+        width: 1040px;
+        height: 370px;
+        position: relative;
+        overflow: hidden;
+        .swiper-wrapper{
+            height: 370px;
+        }
+        .swiper-slide{
+            height: 100%;
+            &:hover .team-img .team-mask{
+                opacity: 1;
+                filter: opacity(alpha=100%);
+            }
+            &:hover .team-info .team-avatar{
+                display: block;
+            }
+            &:hover .team-info .team-name{
+                opacity: 0;
+                filter: opacity(alpha=0%);
+            }
+            .team-img{
+                width: 220px;
+                height: 280px;
+                // border:1px solid red;
+                overflow: hidden;
+                border-radius: 10px;
+                position: relative;
+                img{
+                    position: absolute;
+                    z-index: 0;
+                }
+                .team-mask{
+                    transition: opacity .3s;
+                    opacity: 0;
+                    filter: opacity(alpha=0%);
+                    position: absolute;
+                    z-index: 10;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    color:#fff;
+                    .team-mask-bg{
+                        width: 100%;
+                        height: 100%;
+                        background: #222;
+                        opacity: 0.7;
+                        filter: opacity(alpha=70%);
+                        position: absolute;
+                        border-radius: 10px;
+                        z-index: -1;
+                    }
+                    .team-mask-name{
+                        font-size: 20px;
+                        margin-top: 26px;
+                        line-height: 20px;
+                    }
+                    .team-mask-group{
+                        font-size: 14px;
+                    }
+                    .line{
+                        display: block;
+                        width: 158px;
+                        height: 1px;
+                        background: #fff;
+                        .dc;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                    }
+                    p{
+                        width: 158px;
+                        .dc;
+                        height: 18*4px;
+                        font-size: 12px;
+                        line-height: 1.5;
+                        text-align: left;
+                        overflow: hidden;
+                    }
+                    .team-btn{
+                        color:#479ffa;
+                        font-size: 12px;
+                        width: 124px;
+                        height: 26px;
+                        border:1px solid #479ffa;
+                        border-radius: 14px;
+                        line-height: 28px;
+                        margin:20px auto 0;
+                        transition: all .3s;
+                        display: block;
+                        &:hover{
+                            background-color: #479ffa;
+                            color:#fff;
+                        }
+                    }
+                }
+            }
+            .team-info{
+                width: 220px;
+                height: 90px;
+                position: relative;
+                text-align: center;
+                border-top: 1px solid #f7f7f7;
+                .team-avatar{
+                    display: none;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                    border: 3px solid #fff;
+                    position: absolute;
+                    overflow: hidden;
+                    top:-50%;
+                    left:50%;
+                    margin-left: -40px;
+                    z-index: 99999;
+                    img{
+                        width: 100%;
+                    }
+                }
+                // <div class="team-name">刘钊</div>
+                // <div class="team-group">UI实训组长</div>
+                .team-name{
+                    color:#0369db;
+                    font-size: 20px;
+                    margin-top: 24px;
+                    opacity: 1;
+                    filter: opacity(alpha=100%);
+                }
+                .team-group{
+                    font-size: 14px;
+                    color:#444;
+                }
+            }
+        }
+    }
+}
+/*实训讲师结束*/
