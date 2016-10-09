@@ -231,6 +231,7 @@
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 60px;
 }
 .course-box .course-title {
   height: 196px;
@@ -413,3 +414,12 @@
   transition: all .3s;
 }
 /*课程列表结束*/
+/*实训讲师开始*/
+.team-box {
+  width: 1000px;
+  height: auto;
+  border: 1px solid red;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*实训讲师结束*/
