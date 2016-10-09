@@ -415,11 +415,214 @@
 }
 /*课程列表结束*/
 /*实训讲师开始*/
+/* SHOWMORE开始 */
+.more {
+  width: 136px;
+  height: 28px;
+  float: right;
+}
+.more .more-left {
+  float: left;
+  width: 107px;
+  border: 1px solid #cccccc;
+  border-right: 0;
+  height: 26px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 28px;
+  color: #888;
+}
+.more .more-right {
+  width: 28px;
+  height: 28px;
+  background-color: #fe6e20;
+  text-align: center;
+  line-height: 24px;
+  font-size: 28px;
+  color: #fff;
+  float: right;
+}
+/* SHOWMORE结束 */
 .team-box {
   width: 1000px;
   height: auto;
-  border: 1px solid red;
+  overflow: hidden;
   margin-left: auto;
   margin-right: auto;
+}
+.team-box .team-title {
+  padding-top: 42px;
+  height: 58px;
+}
+.team-box .team-title .line {
+  display: block;
+  height: 24px;
+  width: 3px;
+  float: left;
+  background-color: #0c80ec;
+}
+.team-box .team-title h3 {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-left: 12px;
+  margin-right: 20px;
+}
+.team-box .team-title h6 {
+  font-size: 18px;
+  line-height: 24px;
+  float: left;
+}
+.team-box .hnz-pagination {
+  float: right;
+  height: 6px;
+}
+.team-box .hnz-pagination span {
+  width: 20px;
+  height: 6px;
+  background-color: #c6c6c6;
+  float: left;
+  margin-left: 14px;
+  transition: all .2s;
+}
+.team-box .hnz-pagination span.swiper-visible-switch {
+  background: #579eff;
+}
+.team-box .hnz-pagination span.swiper-active-switch {
+  background-color: #0369db;
+}
+.team-box .team-list {
+  width: 1040px;
+  height: 370px;
+  position: relative;
+  overflow: hidden;
+}
+.team-box .team-list .swiper-wrapper {
+  height: 370px;
+}
+.team-box .team-list .swiper-slide {
+  height: 100%;
+}
+.team-box .team-list .swiper-slide:hover .team-img .team-mask {
+  opacity: 1;
+  filter: opacity(alpha=100%);
+}
+.team-box .team-list .swiper-slide:hover .team-info .team-avatar {
+  display: block;
+}
+.team-box .team-list .swiper-slide:hover .team-info .team-name {
+  opacity: 0;
+  filter: opacity(alpha=0%);
+}
+.team-box .team-list .swiper-slide .team-img {
+  width: 220px;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 10px;
+  position: relative;
+}
+.team-box .team-list .swiper-slide .team-img img {
+  position: absolute;
+  z-index: 0;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask {
+  transition: opacity .3s;
+  opacity: 0;
+  filter: opacity(alpha=0%);
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask .team-mask-bg {
+  width: 100%;
+  height: 100%;
+  background: #222;
+  opacity: 0.7;
+  filter: opacity(alpha=70%);
+  position: absolute;
+  border-radius: 10px;
+  z-index: -1;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask .team-mask-name {
+  font-size: 20px;
+  margin-top: 26px;
+  line-height: 20px;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask .team-mask-group {
+  font-size: 14px;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask .line {
+  display: block;
+  width: 158px;
+  height: 1px;
+  background: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask p {
+  width: 158px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 72px;
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  overflow: hidden;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask .team-btn {
+  color: #479ffa;
+  font-size: 12px;
+  width: 124px;
+  height: 26px;
+  border: 1px solid #479ffa;
+  border-radius: 14px;
+  line-height: 28px;
+  margin: 20px auto 0;
+  transition: all .3s;
+  display: block;
+}
+.team-box .team-list .swiper-slide .team-img .team-mask .team-btn:hover {
+  background-color: #479ffa;
+  color: #fff;
+}
+.team-box .team-list .swiper-slide .team-info {
+  width: 220px;
+  height: 90px;
+  position: relative;
+  text-align: center;
+  border-top: 1px solid #f7f7f7;
+}
+.team-box .team-list .swiper-slide .team-info .team-avatar {
+  display: none;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  position: absolute;
+  overflow: hidden;
+  top: -50%;
+  left: 50%;
+  margin-left: -40px;
+  z-index: 99999;
+}
+.team-box .team-list .swiper-slide .team-info .team-avatar img {
+  width: 100%;
+}
+.team-box .team-list .swiper-slide .team-info .team-name {
+  color: #0369db;
+  font-size: 20px;
+  margin-top: 24px;
+  opacity: 1;
+  filter: opacity(alpha=100%);
+}
+.team-box .team-list .swiper-slide .team-info .team-group {
+  font-size: 14px;
+  color: #444;
 }
 /*实训讲师结束*/
