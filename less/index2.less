@@ -131,7 +131,6 @@
   width: @iw;
   height: auto;
   .dc;
-  background: #f0f0f0;
   .lx_gainHead{
     width: 100%;
     text-align: center;
@@ -183,10 +182,216 @@
   }
   .lx_tabBox{
     width: 1080px;
-    height: 290px;
+    height: 780px;
     padding-top: 40px;
     margin-left: -40px;
-    background: red;
+    .lx_tabPer{
+      width: 280px;
+      height: 350px;
+      margin: 0 40px 40px;
+      background: #ffffff;
+      float: left;
+      .lx_tabPho{
+        width: 280px;
+        height: 210px;
+        overflow: hidden;
+        position: relative;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+        .lx_tabMask{
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: -100%;
+          z-index: 999999;
+          background: rgba(67,145,221,0.6);
+
+          img{
+            width: 110px;
+            height: 104px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            margin: auto;
+          }
+        }
+      }
+      .lx_tabName{
+        font-size: 20px;
+        color: #111;
+        margin-top: 20px;
+      }
+      .lx_tabPro{
+        font-size: 14px;
+        color: #444;
+        border-bottom: 1px dashed #444;
+        padding-bottom: 10px;
+        padding-top: 6px;
+        padding-right: 25px;
+        margin-bottom: 5px;
+        display: inline-block;
+      }
+      .lx_tabSalary{
+        font-size: 14px;
+        color: #444;
+        padding: 3px 0;
+        span{
+          font-size: 18px;
+          color: #ff4255;
+        }
+      }
+      .lx_tabCom{
+        font-size: 14px;
+        color: #444;
+      }
+    }
   }
 }
+.lx_radia{
+  width: 100%;
+  height: 575px;
+  background: #f7f7f7;
+  .lx_radiaCon{
+     width: @iw;
+     height: 465px;
+     padding: 60px 0 50px;
+     .dc;
+     background: url(../images/peitu_113.png) left 60px no-repeat;
+    .lx_radiaLeft{
+      width: 525px;
+      height: 470px;
+      float: left;
+      position: relative;
+      .lx_radiaCity{
+        position: absolute;
+        width: 130px;
+        height: 45px;
+        overflow: hidden;
+        background: #e67030;
+        .lx_cityLeft{
+          width: 22px;
+          height: 30px;
+          float: left;
+          padding: 5px 0;
+          font-size: 12px;
+          color: #ffffff;
+          text-align: center;
+        }
+        .lx_cityDes{
+          width: 108px;
+          height: 30px;
+          padding: 5px 0;
+          overflow: hidden;
+          font-size: 12px;
+          color: #ffebe0;
+        }
+      }
+    }
+    .lx_radiaRight{
+      width: 380px;
+      height: 470px;
+      float: right;
+
+      .lx_radiaHead{
+        font-size: 24px;
+        color: #0d0d0d;
+        border-left: 3px solid @bc;
+        padding-left: 10px;
+      }
+      .lx_radiaDes{
+        font-size: 14px;
+        color: #222222;
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+      .lx_radiaP{
+        margin-top: 90px;
+        font-size:  16px;
+      }
+    }
+  }
+}
+
+.lx_dream{
+  width: @iw;
+  height: 400px;
+  .dc;
+  padding: 45px 0 40px;
+  .lx_dreamHead{
+    font-size: 36px;
+    color: @bc;
+    font-weight: bold;
+    padding: 10px 0 45px ;
+    text-align: center;
+  }
+  .lx_dreamLeft{
+    width: 625px;
+    height: 300px;
+    float: left;
+    .lx_dreamNew{
+      font-size: 18px;
+      color: #0d0d0d;
+      padding: 10px 0;
+      border-bottom: 1px dashed #bfbfbf;
+    }
+    .lx_newBox{
+      width: 100%;
+      height: 240px;
+      margin-top: 20px;
+      .lx_newImg{
+        float: left;
+        width: 320px;
+        height: 240px;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .lx_newRight{
+        width: 250px;
+        height: 240px;
+        float: right;
+        padding-left: 25px;
+        background: url("../images/lx_newBg.png") left top no-repeat;
+        .lx_newItem{
+          width: 100%;
+          height: 80px;
+          overflow: hidden;
+          margin-bottom: 5px;
+          .lx_newTitle{
+            font-family: "Microsoft YaHei";
+            color: #111;
+            font-size: 16px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+          .lx_newDes{
+            font-family: "Microsoft YaHei";
+            color: #4b4b4b;
+            font-size: 12px;
+            padding-top: 5px;
+          }
+        }
+      }
+    }
+  }
+  .lx_dreamRight{
+    width: 320px;
+    height: 300px;
+    float: right;
+    -webkit-box-shadow:0px 0px 5px #ededed;
+    -moz-box-shadow: 0px 0px 5px #ededed    ;
+    box-shadow: 0px 0px 5px #ededed    ;
+  }
+}
+
+
 
