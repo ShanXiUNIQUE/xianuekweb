@@ -138,6 +138,7 @@
   height: 100%;
   display: block;
   overflow: hidden;
+  text-align: center;
 }
 .banner-box .btn-controller {
   position: absolute;
@@ -274,9 +275,10 @@
 .course-box .course-list .course.hot,
 .course-box .course-list .course:hover {
   transition: all .2s;
-  transform: scale(1.05, 1.05);
+  transform: scale3d(1.05, 1.05, 1);
   box-shadow: 0 2px 3px #999;
   border: 1px solid transparent;
+  border: 0;
 }
 .course-box .course-list .course.hot *,
 .course-box .course-list .course:hover * {
@@ -284,7 +286,7 @@
 }
 .course-box .course-list .course.hot .course-top,
 .course-box .course-list .course:hover .course-top {
-  background: url(../images/course_bg.png) no-repeat -10px -5px;
+  background: url(../images/course_bg.png) no-repeat center 0;
 }
 .course-box .course-list .course.hot .course-top .course-top-title h3,
 .course-box .course-list .course:hover .course-top .course-top-title h3,
@@ -487,7 +489,7 @@
   transition: all .2s;
 }
 .team-box .hnz-pagination span.swiper-visible-switch {
-  background: #579eff;
+  background: #86b9ff;
 }
 .team-box .hnz-pagination span.swiper-active-switch {
   background-color: #0369db;
@@ -509,7 +511,8 @@
   filter: opacity(alpha=100%);
 }
 .team-box .team-list .swiper-slide:hover .team-info .team-avatar {
-  display: block;
+  opacity: 1;
+  top: -50%;
 }
 .team-box .team-list .swiper-slide:hover .team-info .team-name {
   opacity: 0;
@@ -599,17 +602,18 @@
   border-top: 1px solid #f7f7f7;
 }
 .team-box .team-list .swiper-slide .team-info .team-avatar {
-  display: none;
+  opacity: 0;
   width: 80px;
   height: 80px;
   border-radius: 50%;
   border: 3px solid #fff;
   position: absolute;
   overflow: hidden;
-  top: -50%;
+  top: 0%;
   left: 50%;
   margin-left: -40px;
   z-index: 99999;
+  transition: top .3s,opacity 0.2s;
 }
 .team-box .team-list .swiper-slide .team-info .team-avatar img {
   width: 100%;
@@ -626,3 +630,132 @@
   color: #444;
 }
 /*实训讲师结束*/
+.practical-box {
+  margin-top: 40px;
+  width: 100%;
+  height: 360px;
+  background: url(../images/pingpu.jpg) repeat 0 0;
+}
+.practical-box .practical {
+  width: 1000px;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.practical-box .practical .practical-title {
+  padding-top: 42px;
+  height: 58px;
+}
+.practical-box .practical .practical-title .line {
+  display: block;
+  height: 24px;
+  width: 3px;
+  float: left;
+  background-color: #0c80ec;
+}
+.practical-box .practical .practical-title h3 {
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-left: 12px;
+  margin-right: 20px;
+  color: #fff;
+}
+.practical-box .practical .practical-title h6 {
+  font-size: 18px;
+  line-height: 24px;
+  float: left;
+  color: #ddd;
+}
+.practical-box .practical .practical-list {
+  width: 100%;
+  height: 260px;
+  text-align: justify;
+}
+.practical-box .practical .practical-list::after {
+  content: "";
+  width: 100%;
+  height: 0;
+  display: inline-block;
+}
+.practical-box .practical .practical-list .practical-list-one {
+  height: 100%;
+  padding: 0 20px;
+  display: inline-block;
+  text-align: center;
+}
+.practical-box .practical .practical-list .practical-list-one.hnz-one:hover .practical-icon-bg,
+.practical-box .practical .practical-list .practical-list-one.hnz-two:hover .practical-icon-bg {
+  transform: rotate(360deg) !important;
+}
+.practical-box .practical .practical-list .practical-list-one.hnz-three:hover .practical-icon-bg,
+.practical-box .practical .practical-list .practical-list-one.hnz-three:hover .practical-icon-bg {
+  transform: rotate(570deg) !important;
+}
+.practical-box .practical .practical-list .practical-list-one.hnz-four:hover .practical-icon-bg,
+.practical-box .practical .practical-list .practical-list-one.hnz-four:hover .practical-icon-bg {
+  transform: rotate(540deg) !important;
+}
+.practical-box .practical .practical-list .practical-list-one.hnz-one:hover .practical-iconfont,
+.practical-box .practical .practical-list .practical-list-one.hnz-one:hover h4,
+.practical-box .practical .practical-list .practical-list-one.hnz-three:hover .practical-iconfont,
+.practical-box .practical .practical-list .practical-list-one.hnz-three:hover h4 {
+  color: #4594e7;
+}
+.practical-box .practical .practical-list .practical-list-one.hnz-two:hover .practical-iconfont,
+.practical-box .practical .practical-list .practical-list-one.hnz-two:hover h4,
+.practical-box .practical .practical-list .practical-list-one.hnz-four:hover .practical-iconfont,
+.practical-box .practical .practical-list .practical-list-one.hnz-four:hover h4 {
+  color: #fa8e19;
+}
+.practical-box .practical .practical-list .practical-list-one .practical-icon {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+.practical-box .practical .practical-list .practical-list-one .practical-icon .practical-icon-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 0;
+  transition: all .5s;
+}
+.practical-box .practical .practical-list .practical-list-one .practical-icon .lan-bg {
+  background: url(../images/yuan_01.png) no-repeat center center;
+}
+.practical-box .practical .practical-list .practical-list-one .practical-icon .lan-bg2 {
+  background: url(../images/yuan_01.png) no-repeat center center;
+  transform: rotate(210deg);
+}
+.practical-box .practical .practical-list .practical-list-one .practical-icon .huang-bg {
+  background: url(../images/yuan_02.png) no-repeat center center;
+}
+.practical-box .practical .practical-list .practical-list-one .practical-icon .huang-bg2 {
+  background: url(../images/yuan_02.png) no-repeat center center;
+  transform: rotate(180deg);
+}
+.practical-box .practical .practical-list .practical-list-one .practical-icon .practical-iconfont {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  line-height: 100px;
+  font-size: 44px;
+  color: #eee;
+  transition: all .3s;
+}
+.practical-box .practical .practical-list .practical-list-one h4 {
+  margin-top: 15px;
+  color: #eee;
+  font-size: 18px;
+  line-height: 3;
+  transition: all .3s;
+}
+.practical-box .practical .practical-list .practical-list-one p {
+  font-size: 12px;
+  color: #ccc;
+}

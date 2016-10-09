@@ -30,6 +30,7 @@ $(function(){
         slidesPerView:4,
         pagination: '.hnz-pagination',
         paginationClickable: true,
+        autoplayDisableOnInteraction:true,
         // slidesPerGroup:4,
         cssWidthAndHeight:false
     })
