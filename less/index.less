@@ -145,6 +145,7 @@
         height: 100%;
         display: block;
         overflow: hidden;
+        text-align: center;
     }
     .btn-controller{
         position: absolute;
@@ -276,14 +277,15 @@
             overflow: hidden;
             &.hot,&:hover{
                 transition: all .2s;
-                transform:  scale(1.05,1.05);
+                transform:  scale3d(1.05,1.05,1);
                 box-shadow: 0 2px 3px #999;
                 border: 1px solid transparent;
+                border:0;
                 & *{
                     transition: all .2s;
                 }
                 .course-top{
-                    background:url(../images/course_bg.png) no-repeat -10px -5px;
+                    background:url(../images/course_bg.png) no-repeat center 0 ;
                     .course-top-title h3,.course-top-title p{
                         color:#fff;
                     }
@@ -423,22 +425,22 @@
     float: right;
     .more-left{
         float: left;
-        width: 107px;
+        width: 107px!important;
         border: 1px solid #cccccc;
         border-right: 0;
-        height: 26px;
-        font-size: 14px;
+        height: 26px!important;
+        font-size: 14px!important;
         text-align: center;
-        line-height: 28px;
-        color:#888;
+        line-height: 28px!important;
+        color:#888!important;
     }
     .more-right{
-        width: 28px;
-        height: 28px;
+        width: 28px!important;
+        height: 28px!important;
         background-color: #fe6e20;
         text-align: center;
-        line-height: 24px;
-        font-size: 28px;
+        line-height: 24px!important;
+        font-size: 28px!important;
         color:#fff;
         float: right;
     }
@@ -486,7 +488,7 @@
             margin-left:14px;
             transition: all .2s;
             &.swiper-visible-switch{
-                background: #579eff;
+                background: #86b9ff;
             }
             &.swiper-active-switch{
                 background-color: #0369db;
@@ -495,7 +497,6 @@
 
     }
     .team-list{
-        // width: 100%;
         width: 1040px;
         height: 370px;
         position: relative;
@@ -510,7 +511,8 @@
                 filter: opacity(alpha=100%);
             }
             &:hover .team-info .team-avatar{
-                display: block;
+                opacity: 1;
+                top:-50%;
             }
             &:hover .team-info .team-name{
                 opacity: 0;
@@ -519,7 +521,6 @@
             .team-img{
                 width: 220px;
                 height: 280px;
-                // border:1px solid red;
                 overflow: hidden;
                 border-radius: 10px;
                 position: relative;
@@ -598,17 +599,18 @@
                 text-align: center;
                 border-top: 1px solid #f7f7f7;
                 .team-avatar{
-                    display: none;
+                    opacity: 0;
                     width: 80px;
                     height: 80px;
                     border-radius: 50%;
                     border: 3px solid #fff;
                     position: absolute;
                     overflow: hidden;
-                    top:-50%;
+                    top:0%;
                     left:50%;
                     margin-left: -40px;
                     z-index: 99999;
+                    transition: top .3s,opacity 0.2s;
                     img{
                         width: 100%;
                     }
@@ -631,3 +633,342 @@
     }
 }
 /*实训讲师结束*/
+
+.practical-box{
+    margin-top: 40px;
+    width: 100%;
+    height: 360px;
+    background: url(../images/pingpu.jpg) repeat 0 0;
+    .practical{
+        width: @iw;
+        height: 100%;
+        .dc;
+        .practical-title{
+            padding-top: 42px;
+            height: 58px;
+            .line{
+                display: block;
+                height: 24px;
+                width: 3px;
+                float: left;
+                background-color: @bc;
+            }
+            h3{
+                float: left;
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 24px;
+                margin-left: 12px;
+                margin-right: 20px;
+                color: #fff;
+            }
+            h6{
+                font-size: 18px;
+                line-height: 24px;
+                float: left;
+                color:#ddd;
+            }
+        }
+        .practical-list{
+            width: 100%;
+            height: 260px;
+            text-align: justify;
+            &::after{
+                content: "";
+                width: 100%;
+                height: 0;
+                display: inline-block;
+            }
+            .practical-list-one{
+                height: 100%;
+                padding:0 20px;
+                display: inline-block;
+                text-align: center;
+                &.hnz-one:hover .practical-icon-bg,&.hnz-two:hover .practical-icon-bg{
+                    transform: rotate(360deg)!important;
+                }
+                &.hnz-three:hover .practical-icon-bg,&.hnz-three:hover .practical-icon-bg{
+                    transform: rotate(570deg)!important;
+                }
+                &.hnz-four:hover .practical-icon-bg,&.hnz-four:hover .practical-icon-bg{
+                    transform: rotate(540deg)!important;
+                }
+                &.hnz-one:hover  .practical-iconfont,&.hnz-one:hover h4,&.hnz-three:hover  .practical-iconfont,&.hnz-three:hover h4{
+                    color: #4594e7;
+                }
+                &.hnz-two:hover .practical-iconfont,&.hnz-two:hover h4,&.hnz-four:hover .practical-iconfont,&.hnz-four:hover h4{
+                    color:#fa8e19;
+                }
+
+                .practical-icon{
+                    width: 100px;
+                    height: 100px;
+                    .dc;
+                    position: relative;
+                    .practical-icon-bg{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 0;
+                        transition: all .5s;
+                    }
+                    .lan-bg{
+                        background: url(../images/yuan_01.png) no-repeat center center;
+                    }
+                    .lan-bg2{
+                        background: url(../images/yuan_01.png) no-repeat center center;
+                        transform: rotate(210deg);
+                    }
+                    .huang-bg{
+                        background: url(../images/yuan_02.png) no-repeat center center;
+                    }
+                    .huang-bg2{
+                        background: url(../images/yuan_02.png) no-repeat center center;
+
+                        transform: rotate(180deg);
+                    }
+                    .practical-iconfont{
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        z-index: 1;
+                        text-align: center;
+                        line-height: 100px;
+                        font-size: 44px;
+                        color:#eee;
+                        transition: all .3s;
+                    }
+                }
+                h4{
+                    margin-top: 15px;
+                    color: #eee;
+                    font-size: 18px;
+                    line-height: 3;
+                    transition: all .3s;
+                }
+                p{
+                    font-size: 12px;
+                    color: #ccc;
+                }
+            }
+        }
+    }
+}
+/*实训效果展示开始*/
+.show-box{
+    width: @iw;
+    height: auto;
+    .dc;
+    .show-title{
+        height: 150px;
+        text-align: center;
+        h3{
+            font-size: 24px;
+            margin-top: 25px;
+            color: #333;
+            line-height: 2;
+        }
+        h5{
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .line{
+            width: 20px;
+            height: 2px;
+            display: block;
+            background: @bc;
+            .dc;
+            margin-top: 10px;
+
+        }
+    }
+    .show-tab{
+        .tabs{
+            height: 49px;
+            border-bottom:1px solid #b5b5b5;
+            div{
+                display: block;
+                float: left;
+                height: 50px;
+                margin-right: 20px;
+                cursor: pointer;
+                b{
+                    display: block;
+                    font-weight: normal;
+                    height: 48px;
+                    line-height: 48px;
+                }
+                span{
+                    display: none;
+                    width: 100%;
+                    height: 2px;
+                    background: #0369db;
+                }
+
+            }
+            div.active,div:hover{
+                color: #0369db;
+                span{
+                    display: block;
+                }
+            }
+            .more{
+                margin-top: 10px;
+            }
+        }
+        .swiper-container{
+            width: 100%;
+            height: 358px;
+            .show-list{
+                width: 50%;
+                height: 100%;
+                float: left;
+                .show-list-img{
+                    width: 212px;
+                    height: 282px;
+                    overflow: hidden;
+                    margin-top: 40px;
+                    margin-left: 24px;
+                    float: left;
+                }
+                .show-list-info{
+                    float: left;
+                    margin-left:38px;
+                    width: 200px;
+                    height: 282px;
+                    .show-list-name{
+                        color:#0369db;
+                        font-size: 16px;
+                        margin-top: 40px;
+                    }
+                    .show-list-banji{
+                        font-size: 12px;
+                        line-height: 1.5;
+                        margin-top: 5px;
+                    }
+                    .show-list-tuandui{
+                        font-size: 12px;
+                    }
+                    .line{
+                        display: block;
+                        margin:24px 0;
+                        border-top:1px dashed #ccc;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: #555;
+                        height: 110px;
+                        overflow: hidden;
+                    }
+                    .show-list-btn{
+                        width: 180px;
+                        height: 40px;
+                        *background: #0692e5;
+                        background: linear-gradient(to bottom,#07a9eb,#046fdc);
+                        border-radius: 20px;
+                        font-size: 14px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 40px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+/*实训效果展示结束*/
+.production-list{
+    width: @iw;
+    height: 350px;
+    .dc;
+    .swiper-container{
+        height: 100%;
+    }
+    .swiper-slide{
+        height: 100%;
+        &:hover .production-list-img img{
+            transform: scale(1.1,1.1);
+        }
+        .production-list-img{
+            width: 220px;
+            height: 294px;
+            img{
+                width: 100%;
+                transition: all .3s;
+            }
+        }
+        .production-list-title{
+            height: 60px;
+            width: 220px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+    }
+}
+
+.hnz-line{
+    margin-top: 60px;
+    border-bottom: 1px dashed #ccc;
+}
+
+
+
+.job-box{
+    height: auto;
+    border:1px solid red;
+    .job-title{
+        width: @iw;
+        height: 196px;
+        .dc;
+        text-align: center;
+        overflow: hidden;
+        p{
+            margin-top: 60px;
+            font-size: 36px;
+            color: @bc;
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            color:#333;
+        }
+        i{
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #043280;
+            .dc;
+            margin-top: 10px;
+        }
+    }
+    .job-list-box{
+        width: @iw;
+        .dc;
+        height: 220px;
+        background: #fff;
+        position: relative;
+        .job-list{
+            width: 100%;
+            height: 100%;
+            div{
+                width: 33.33333%;
+                float:left;
+                height: 100%;
+                
+            }
+            position: absolute;
+            z-index: 2;
+        }
+        .job-mask{
+            width: 33.333333%;
+            height: 100%;
+            background: #0369db;
+            position: absolute;
+            z-index: 1;
+            left:0;
+        }
+    }
+}
