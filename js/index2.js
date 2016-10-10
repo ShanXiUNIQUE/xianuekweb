@@ -71,7 +71,35 @@ $(function(){
     var  cityArr=[[193,174],[392,105],[456,222],[452,323],[407,377],[223,356],[160,262]];
     city.each(function(index,obj){
          $(obj).css({left:cityArr[index][0],top:cityArr[index][1]});
-        console.log(cityArr[obj])
     })
+ // 3d
+    var mySwiper = new Swiper('.lx_soonLun',{
+        loop:true,
+        //其他设置
+        tdFlow: {
 
+            stretch :0,
+            depth: 300,
+            modifier : 2,
+            shadows : true,
+            slide:30,
+            rotate:30,
+        }
+
+    });
+    $('.lx_soonBtn .lx_btnL').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipePrev()
+    })
+    $('.lx_soonBtn .lx_btnR').on('click', function(e){
+        e.preventDefault()
+        mySwiper.swipeNext()
+    })
+    $(".lx_soonBox").hover(function(){
+         $(this).find("a").animate({opacity:1}).delay(300);
+         $(this).find('.lx_soonDes').animate({bottom:0,opacity:1},"fast");
+    },function(){
+        $(this).find('a').animate({opacity:0});
+        $(this).find('.lx_soonDes').animate({bottom:-15,opacity:0});
+    })
 })

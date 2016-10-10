@@ -247,7 +247,7 @@
         padding: 3px 0;
         span{
           font-size: 18px;
-          color: #ff4255;
+          color: #fe6e20;
         }
       }
       .lx_tabCom{
@@ -272,6 +272,11 @@
       height: 470px;
       float: left;
       position: relative;
+      .lx_radiaImg{
+        position: absolute;
+        left: 335px;
+        top: 193px;
+      }
       .lx_radiaCity{
         position: absolute;
         width: 130px;
@@ -410,7 +415,7 @@
         background: #ffffff;
         text-align: center;
         font-size: 16px;
-        color: @bc;
+        color: #fe6e20;
         cursor: pointer;
         .iconfont{
           color: #fe6e20;
@@ -483,7 +488,7 @@
         .lx_cb{
           width: 90px;
           height: 25px;
-          border-radius: 5px;
+          border-radius: 16px;
           border:1px solid  @bc;
           color: @bc;
           font-size: 12px;
@@ -510,11 +515,44 @@
     width: @iw;
     height: 100%;
     .dc;
+    position: relative;
+    .lx_soonBtn{
+      width: 100%;
+      height: 54px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      a{
+        display: block;
+        width: 54px;
+        height: 54px;
+        border: 1px solid #a0a0a0;
+        border-radius: 50%;
+        transition: all ease 0.5s;
+      }
+
+      .lx_btnL{
+        float: left;
+        background: #818181 url(../images/btnL.png) center no-repeat;
+      }
+      .lx_btnL:hover{
+        background: #fe6e20 url(../images/btnL.png) center no-repeat;
+      }
+      .lx_btnR{
+        float: right;
+        background: #818181 url(../images/btnR.png) center no-repeat;
+      }
+      .lx_btnR:hover{
+        background: #fe6e20 url(../images/btnR.png) center no-repeat;
+      }
+    }
     .lx_soonTitle{
       color: #ffffff;
       font-family: "Microsoft YaHei";
       font-size: 24px;
-      padding: 40px 0 20px;
+      padding: 40px 0 20px 40px;
+      background: url("../images/yingxiang_157.png") left 40px no-repeat;
       .iconfont{
         color: #ffffff!important;
         font-size: 24px!important;
@@ -523,7 +561,67 @@
     .lx_soonLun{
       width: 840px;
       height: 530px;
-      background: red;
+      margin: 0 auto;
+      .lx_soonSlide{
+        padding-top: 3px;
+        text-align: center;
+        position: relative;
+        .lx_soonBox{
+          width: 660px;
+          height: 500px;
+          background: #ffffff;
+          position: absolute;
+          left: 0;
+          right: 0;
+          margin: 0 auto;
+        }
+        a{
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: auto;
+          width: 62px;
+          height: 62px;
+          background: url(../images/jingxiaong_157.png) center no-repeat;
+          opacity: 0;
+        }
+        img{
+          outline: 1px solid rgba(12,128,236,0);
+        }
+        img:hover{
+          outline: 1px solid rgba(12,128,236,1);
+        }
+        .lx_soonDes{
+          padding: 0 10px;
+          width: 666px;
+          box-sizing: border-box;
+          height: 55px;
+          background: rgba(0,0,0,0.7);
+          position: absolute;
+          bottom: -15px;
+          left: 0px;
+          line-height: 55px;
+          text-align: left;
+          opacity: 0;
+          .lx_desTime{
+            color: #ffffff;
+            background: url("../images/jingxiaong_169.png") left center no-repeat;
+            font-size: 16px;
+            padding-left: 20px;
+          }
+          .lx_desTitle{
+            margin-left: 25px;
+            color: #dedede;
+            font-size: 16px;
+          }
+        }
+      }
+      .lx_soonSlide img{
+        width: 666px;
+        height: 500px;
+      }
     }
   }
 
