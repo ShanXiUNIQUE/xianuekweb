@@ -425,22 +425,22 @@
 }
 .more .more-left {
   float: left;
-  width: 107px;
+  width: 107px!important;
   border: 1px solid #cccccc;
   border-right: 0;
-  height: 26px;
-  font-size: 14px;
+  height: 26px!important;
+  font-size: 14px!important;
   text-align: center;
-  line-height: 28px;
-  color: #888;
+  line-height: 28px!important;
+  color: #888!important;
 }
 .more .more-right {
-  width: 28px;
-  height: 28px;
+  width: 28px!important;
+  height: 28px!important;
   background-color: #fe6e20;
   text-align: center;
-  line-height: 24px;
-  font-size: 28px;
+  line-height: 24px!important;
+  font-size: 28px!important;
   color: #fff;
   float: right;
 }
@@ -758,4 +758,221 @@
 .practical-box .practical .practical-list .practical-list-one p {
   font-size: 12px;
   color: #ccc;
+}
+/*实训效果展示开始*/
+.show-box {
+  width: 1000px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+.show-box .show-title {
+  height: 150px;
+  text-align: center;
+}
+.show-box .show-title h3 {
+  font-size: 24px;
+  margin-top: 25px;
+  color: #333;
+  line-height: 2;
+}
+.show-box .show-title h5 {
+  font-size: 14px;
+  line-height: 1.5;
+}
+.show-box .show-title .line {
+  width: 20px;
+  height: 2px;
+  display: block;
+  background: #0c80ec;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.show-box .show-tab .tabs {
+  height: 49px;
+  border-bottom: 1px solid #b5b5b5;
+}
+.show-box .show-tab .tabs div {
+  display: block;
+  float: left;
+  height: 50px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.show-box .show-tab .tabs div b {
+  display: block;
+  font-weight: normal;
+  height: 48px;
+  line-height: 48px;
+}
+.show-box .show-tab .tabs div span {
+  display: none;
+  width: 100%;
+  height: 2px;
+  background: #0369db;
+}
+.show-box .show-tab .tabs div.active,
+.show-box .show-tab .tabs div:hover {
+  color: #0369db;
+}
+.show-box .show-tab .tabs div.active span,
+.show-box .show-tab .tabs div:hover span {
+  display: block;
+}
+.show-box .show-tab .tabs .more {
+  margin-top: 10px;
+}
+.show-box .show-tab .swiper-container {
+  width: 100%;
+  height: 358px;
+}
+.show-box .show-tab .swiper-container .show-list {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-img {
+  width: 212px;
+  height: 282px;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-left: 24px;
+  float: left;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-info {
+  float: left;
+  margin-left: 38px;
+  width: 200px;
+  height: 282px;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-info .show-list-name {
+  color: #0369db;
+  font-size: 16px;
+  margin-top: 40px;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-info .show-list-banji {
+  font-size: 12px;
+  line-height: 1.5;
+  margin-top: 5px;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-info .show-list-tuandui {
+  font-size: 12px;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-info .line {
+  display: block;
+  margin: 24px 0;
+  border-top: 1px dashed #ccc;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-info p {
+  font-size: 14px;
+  color: #555;
+  height: 110px;
+  overflow: hidden;
+}
+.show-box .show-tab .swiper-container .show-list .show-list-info .show-list-btn {
+  width: 180px;
+  height: 40px;
+  *background: #0692e5;
+  background: linear-gradient(to bottom, #07a9eb, #046fdc);
+  border-radius: 20px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  display: block;
+}
+/*实训效果展示结束*/
+.production-list {
+  width: 1000px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.production-list .swiper-container {
+  height: 100%;
+}
+.production-list .swiper-slide {
+  height: 100%;
+}
+.production-list .swiper-slide:hover .production-list-img img {
+  transform: scale(1.1, 1.1);
+}
+.production-list .swiper-slide .production-list-img {
+  width: 220px;
+  height: 294px;
+}
+.production-list .swiper-slide .production-list-img img {
+  width: 100%;
+  transition: all .3s;
+}
+.production-list .swiper-slide .production-list-title {
+  height: 60px;
+  width: 220px;
+  line-height: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.hnz-line {
+  margin-top: 60px;
+  border-bottom: 1px dashed #ccc;
+}
+.job-box {
+  height: auto;
+  border: 1px solid red;
+}
+.job-box .job-title {
+  width: 1000px;
+  height: 196px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  overflow: hidden;
+}
+.job-box .job-title p {
+  margin-top: 60px;
+  font-size: 36px;
+  color: #0c80ec;
+}
+.job-box .job-title span {
+  display: block;
+  font-size: 16px;
+  color: #333;
+}
+.job-box .job-title i {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #043280;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+.job-box .job-list-box {
+  width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 220px;
+  background: #fff;
+  position: relative;
+}
+.job-box .job-list-box .job-list {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.job-box .job-list-box .job-list div {
+  width: 33.33333%;
+  float: left;
+  height: 100%;
+}
+.job-box .job-list-box .job-mask {
+  width: 33.333333%;
+  height: 100%;
+  background: #0369db;
+  position: absolute;
+  z-index: 1;
+  left: 0;
 }

@@ -425,22 +425,22 @@
     float: right;
     .more-left{
         float: left;
-        width: 107px;
+        width: 107px!important;
         border: 1px solid #cccccc;
         border-right: 0;
-        height: 26px;
-        font-size: 14px;
+        height: 26px!important;
+        font-size: 14px!important;
         text-align: center;
-        line-height: 28px;
-        color:#888;
+        line-height: 28px!important;
+        color:#888!important;
     }
     .more-right{
-        width: 28px;
-        height: 28px;
+        width: 28px!important;
+        height: 28px!important;
         background-color: #fe6e20;
         text-align: center;
-        line-height: 24px;
-        font-size: 28px;
+        line-height: 24px!important;
+        font-size: 28px!important;
         color:#fff;
         float: right;
     }
@@ -751,6 +751,224 @@
                     color: #ccc;
                 }
             }
+        }
+    }
+}
+/*实训效果展示开始*/
+.show-box{
+    width: @iw;
+    height: auto;
+    .dc;
+    .show-title{
+        height: 150px;
+        text-align: center;
+        h3{
+            font-size: 24px;
+            margin-top: 25px;
+            color: #333;
+            line-height: 2;
+        }
+        h5{
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        .line{
+            width: 20px;
+            height: 2px;
+            display: block;
+            background: @bc;
+            .dc;
+            margin-top: 10px;
+
+        }
+    }
+    .show-tab{
+        .tabs{
+            height: 49px;
+            border-bottom:1px solid #b5b5b5;
+            div{
+                display: block;
+                float: left;
+                height: 50px;
+                margin-right: 20px;
+                cursor: pointer;
+                b{
+                    display: block;
+                    font-weight: normal;
+                    height: 48px;
+                    line-height: 48px;
+                }
+                span{
+                    display: none;
+                    width: 100%;
+                    height: 2px;
+                    background: #0369db;
+                }
+
+            }
+            div.active,div:hover{
+                color: #0369db;
+                span{
+                    display: block;
+                }
+            }
+            .more{
+                margin-top: 10px;
+            }
+        }
+        .swiper-container{
+            width: 100%;
+            height: 358px;
+            .show-list{
+                width: 50%;
+                height: 100%;
+                float: left;
+                .show-list-img{
+                    width: 212px;
+                    height: 282px;
+                    overflow: hidden;
+                    margin-top: 40px;
+                    margin-left: 24px;
+                    float: left;
+                }
+                .show-list-info{
+                    float: left;
+                    margin-left:38px;
+                    width: 200px;
+                    height: 282px;
+                    .show-list-name{
+                        color:#0369db;
+                        font-size: 16px;
+                        margin-top: 40px;
+                    }
+                    .show-list-banji{
+                        font-size: 12px;
+                        line-height: 1.5;
+                        margin-top: 5px;
+                    }
+                    .show-list-tuandui{
+                        font-size: 12px;
+                    }
+                    .line{
+                        display: block;
+                        margin:24px 0;
+                        border-top:1px dashed #ccc;
+                    }
+                    p{
+                        font-size: 14px;
+                        color: #555;
+                        height: 110px;
+                        overflow: hidden;
+                    }
+                    .show-list-btn{
+                        width: 180px;
+                        height: 40px;
+                        *background: #0692e5;
+                        background: linear-gradient(to bottom,#07a9eb,#046fdc);
+                        border-radius: 20px;
+                        font-size: 14px;
+                        color: #fff;
+                        text-align: center;
+                        line-height: 40px;
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+/*实训效果展示结束*/
+.production-list{
+    width: @iw;
+    height: 350px;
+    .dc;
+    .swiper-container{
+        height: 100%;
+    }
+    .swiper-slide{
+        height: 100%;
+        &:hover .production-list-img img{
+            transform: scale(1.1,1.1);
+        }
+        .production-list-img{
+            width: 220px;
+            height: 294px;
+            img{
+                width: 100%;
+                transition: all .3s;
+            }
+        }
+        .production-list-title{
+            height: 60px;
+            width: 220px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+        }
+    }
+}
+
+.hnz-line{
+    margin-top: 60px;
+    border-bottom: 1px dashed #ccc;
+}
+
+
+
+.job-box{
+    height: auto;
+    border:1px solid red;
+    .job-title{
+        width: @iw;
+        height: 196px;
+        .dc;
+        text-align: center;
+        overflow: hidden;
+        p{
+            margin-top: 60px;
+            font-size: 36px;
+            color: @bc;
+        }
+        span{
+            display: block;
+            font-size: 16px;
+            color:#333;
+        }
+        i{
+            display: block;
+            width: 20px;
+            height: 2px;
+            background-color: #043280;
+            .dc;
+            margin-top: 10px;
+        }
+    }
+    .job-list-box{
+        width: @iw;
+        .dc;
+        height: 220px;
+        background: #fff;
+        position: relative;
+        .job-list{
+            width: 100%;
+            height: 100%;
+            div{
+                width: 33.33333%;
+                float:left;
+                height: 100%;
+                
+            }
+            position: absolute;
+            z-index: 2;
+        }
+        .job-mask{
+            width: 33.333333%;
+            height: 100%;
+            background: #0369db;
+            position: absolute;
+            z-index: 1;
+            left:0;
         }
     }
 }
