@@ -918,7 +918,6 @@
 
 .job-box{
     height: auto;
-    border:1px solid red;
     .job-title{
         width: @iw;
         height: 196px;
@@ -939,7 +938,7 @@
             display: block;
             width: 20px;
             height: 2px;
-            background-color: #043280;
+            background-color: #0369db;
             .dc;
             margin-top: 10px;
         }
@@ -957,7 +956,37 @@
                 width: 33.33333%;
                 float:left;
                 height: 100%;
-                
+                text-align: center;
+                transition: all .2s;
+                position: relative;
+                .job-list-icon{
+                    display: block;
+                    font-size: 37px;
+                    text-align: center;
+                    line-height: 2;
+                    margin-top: 10px;
+                }
+                h3{
+                    font-size: 18px;
+                    line-height: 2;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 12px;
+                    line-height: 2;
+                    text-align: left;
+                    padding-left:100px;
+                }
+                i{
+                    position: absolute;
+                    width: 0px;
+                    border-right:1px dashed #aaa;
+                    height: 100px;
+                    margin:auto 0;
+                    top:0;
+                    bottom: 0;
+                    right:0;
+                }
             }
             position: absolute;
             z-index: 2;
@@ -969,6 +998,96 @@
             position: absolute;
             z-index: 1;
             left:0;
+        }
+    }
+    .flowpath-box{
+        margin-top: -110px;
+        height: 420px;
+        background:#333332 url(../images/jiuyeditu_102.jpg) no-repeat center 0;
+        overflow: hidden;
+        h4{
+            margin-top: 160px;
+            margin-bottom: 40px;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+        }
+        .flowpath-list-box{
+            height: 140px;
+            overflow: hidden;
+            position: relative;
+            .flowpath-line{
+                height: 2px;
+                background: #fff;
+                margin-top: 138/2px;
+            }
+            .flowpath-list{
+                position: absolute;
+                margin:0 auto;
+                top:0;
+                left:0;
+                right: 0;
+                min-width: @iw;
+                width: 1155px;
+                height: 100%;
+                text-align: justify;
+                &::after{
+                    content: "";
+                    display: inline-block;
+                    height: 0;
+                    line-height: 0;
+                    width: 100%;
+                }
+                div{
+                    height: 100%;
+                    text-align: center;
+                    display: inline-block;
+
+                    vertical-align: top;
+                    &:hover{
+                        span{
+                            color: #fe6e20;
+                        }
+                        i{
+                            color: #fe6e20;
+                        }
+                        b{
+                            background: #fe6e20;;
+                        }
+                    }
+                    p{
+                        height: 46.666px;
+                        line-height: 23px;
+                        color: #ddd;
+                        font-size: 14px;
+                        b{
+                            display: block;
+                            width: 12px;
+                            height: 12px;
+                            margin:17px auto;
+                            background: #fff;
+                            border-radius: 50%;
+                            transition: all .3s;
+                        }
+                        span{
+                            float: left;
+                            width: 46px;
+                            height: 100%;
+                            font-size: 36px;
+                            transition: all .3s;
+                            font-family: arial;
+                        }
+                        i{
+                            float: left;
+                            height: 100%;
+                            font-size: 12px;
+                            line-height: 14px;
+                            font-style: normal;
+                            transition: all .3s;
+                        }
+                    }
+                }
+            }
         }
     }
 }

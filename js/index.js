@@ -60,10 +60,13 @@ $(function(){
   var iw = divs.width();
   divs.hover(function(){
       var i = $(this).index();
-      divs.css({color:"#555"})
+
       var that = this;
+      jobMask.stop(true,true);
       jobMask.animate({left:i*iw},200,function(){
-           $(that).css({color:"#fff"})
+          divs.css({color:"#555"})
+          $(that).css({color:"#fff"})
       })
+
   })
 })
