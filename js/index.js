@@ -1,9 +1,6 @@
 $(function(){
     var hnzWheel = new Swiper('.hnz-swiper-container',{
-        // pagination: '.pagination',
         loop:true,
-        // grabCursor: true,
-        // paginationClickable: true
     })
     $('.hnz-arrow-left').on('click', function(e){
         e.preventDefault()
@@ -49,8 +46,6 @@ $(function(){
         ploop:true,
         autoplay : 2000,
         slidesPerView:4,
-        // pagination: '.pagination',
-        // paginationClickable: true,
         autoplayDisableOnInteraction:true,
         cssWidthAndHeight:false
   })
