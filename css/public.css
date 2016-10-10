@@ -2,7 +2,7 @@
 	font-family:"Helvetica","Arial","Microsoft YaHei","黑体","宋体",sans-serif;;
 }
 
-body,ul,li,ol,dl,dt,dd,input,form,h1,h2,h3,h4,h5,h6,p{
+body,ul,li,ol,dl,dt,dd,input,form,h1,h2,h3,h4,h5,h6,p,table,tr,td,th{
 	margin: 0;
 	padding: 0;
 	list-style: none;
