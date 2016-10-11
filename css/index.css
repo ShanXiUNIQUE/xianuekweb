@@ -1,3 +1,9 @@
+.block-jr {
+  width: 100%;
+  height: 0;
+  line-height: 0;
+  display: inline-block;
+}
 /*头部开始*/
 .header {
   width: 100%;
@@ -69,6 +75,7 @@
 }
 .header .header-nav-box {
   height: 60px;
+  background-color: #fff \9;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .header .header-nav-box .header-nav {
@@ -81,13 +88,6 @@
   width: 822px;
   margin-left: 178px;
   text-align: justify;
-}
-.header .header-nav-box .header-nav .header-nav-list::after {
-  content: "";
-  display: inline-block;
-  width: 100%;
-  height: 0;
-  line-height: 0;
 }
 .header .header-nav-box .header-nav .header-nav-list li {
   display: inline-block;
@@ -106,6 +106,7 @@
 }
 .header .header-nav-box .header-nav .header-nav-list li a:hover .en {
   opacity: 1;
+  filter: alpha(opacity=100);
 }
 .header .header-nav-box .header-nav .header-nav-list li span {
   display: block;
@@ -120,6 +121,7 @@
   font-size: 12px;
   color: #0c80ec;
   opacity: 0;
+  filter: alpha(opacity=0);
 }
 /*头部结束*/
 /*banner 开始*/
@@ -508,15 +510,16 @@
 }
 .team-box .team-list .swiper-slide:hover .team-img .team-mask {
   opacity: 1;
-  filter: opacity(alpha=100%);
+  filter: alpha(opacity=100);
 }
 .team-box .team-list .swiper-slide:hover .team-info .team-avatar {
   opacity: 1;
+  filter: alpha(opacity=100);
   top: -50%;
 }
 .team-box .team-list .swiper-slide:hover .team-info .team-name {
   opacity: 0;
-  filter: opacity(alpha=0%);
+  filter: alpha(opacity=0);
 }
 .team-box .team-list .swiper-slide .team-img {
   width: 220px;
@@ -532,7 +535,7 @@
 .team-box .team-list .swiper-slide .team-img .team-mask {
   transition: opacity .3s;
   opacity: 0;
-  filter: opacity(alpha=0%);
+  filter: alpha(opacity=0);
   position: absolute;
   z-index: 10;
   width: 100%;
@@ -545,7 +548,7 @@
   height: 100%;
   background: #222;
   opacity: 0.7;
-  filter: opacity(alpha=70%);
+  filter: alpha(opacity=70);
   position: absolute;
   border-radius: 10px;
   z-index: -1;
@@ -603,6 +606,7 @@
 }
 .team-box .team-list .swiper-slide .team-info .team-avatar {
   opacity: 0;
+  filter: alpha(opacity=0);
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -623,7 +627,7 @@
   font-size: 20px;
   margin-top: 24px;
   opacity: 1;
-  filter: opacity(alpha=100%);
+  filter: alpha(opacity=100);
 }
 .team-box .team-list .swiper-slide .team-info .team-group {
   font-size: 14px;
@@ -873,7 +877,7 @@
 .show-box .show-tab .swiper-container .show-list .show-list-info .show-list-btn {
   width: 180px;
   height: 40px;
-  *background: #0692e5;
+  background: #0692e5\9;
   background: linear-gradient(to bottom, #07a9eb, #046fdc);
   border-radius: 20px;
   font-size: 14px;

@@ -14,7 +14,7 @@ $(function(){
     var $courseList = $('.course-list .course');
     $courseList.hover(function(){
         $courseList.removeClass('hot');
-        $(this).addClsss('hot');
+        $(this).addClass('hot');
     },function(){
         $(this).removeClass('hot');
         $courseList.eq(1).addClass('hot');
